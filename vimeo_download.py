@@ -57,13 +57,11 @@ def __check_if_file_exists(file_name, replace):
     if replace:
       os.remove(os.path.join(download_directory, file_name))
       return False
-    else:
-      new_replace = input("This file already exists, do you want to replace it? (Y/N): ")
-      if new_replace.lower() == "y":
-        os.remove(os.path.join(download_directory, file_name))
-        return False
-      else:
-        return True
+    new_replace = input("This file already exists, do you want to replace it? (Y/N): ")
+    if new_replace.lower() == "y":
+      os.remove(os.path.join(download_directory, file_name))
+      return False
+    return True
 
 def get_video(url, destination, replace=False):
   if not os.path.isdir(os.path.dirname(os.path.join(download_directory, destination))):
