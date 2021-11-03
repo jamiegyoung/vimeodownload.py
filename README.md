@@ -1,25 +1,21 @@
-# vimeo-download-py
-This is a simple module that downloads private and public vimeo videos.
+# vimeodownload.py
+This is a simple package that downloads public and private Vimeo videos.
 
+***NOTE:*** *This module is not extensively tested so use at your own risk. If you do find an issue, please report it on the [GitHub repository](https://github.com/jamiegyoung/vimeo-download-py)*
+
+## Usage
 ```py
-vimeo.get_video(url, destination, replace=False)
+vimeodownload.get_video(url, destination, replace=False, quiet=False)
 ```
+
+The `quiet` argument will make the script not print any output.
+The `replace` argument will overwrite existing files.
 
 ## Example
-The below example will download a video to `./downloads/vid.mp4` and `./downloads/other/vid.mp4`.
-
 ```py
-import vimeo_download as vimeo
+import vimeodownload
 
-vimeo.get_video("https://vimeo.com/148751763", "vid.mp4")
-vimeo.get_video("https://vimeo.com/148751763", "/other/vid.mp4")
+vimeodownload.get_video("https://vimeo.com/148751763", "./vid.mp4")
+vimeodownload.get_video("https://vimeo.com/148751763", "./other/vid.mp4", replace=True, quiet=True)
 ```
-
-This example is the same but instead downloads to `./videos/vid.mp4` and `./videos/bob/vid.mp4`. It will also replace `./vidoes/vid.mp4` if it is found without prompt.
-```py
-import vimeo_download as vimeo
-
-vimeo.download_directory = "./videos"
-vimeo.get_video("https://vimeo.com/148751763", "vid.mp4", True)
-vimeo.get_video("https://vimeo.com/148751763", "bob/vid.mp4")
-```
+The above example will download a video to `./vid.mp4` with output and `./other/vid.mp4` without any output.
