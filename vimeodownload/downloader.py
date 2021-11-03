@@ -50,11 +50,10 @@ def __get_video_options(url):
     vimeo_html = requests.get(url)
     # This may be criminal but im doing it anyway
     config_url_match = re.search(
-        "\"https:\\\/\\\/player.vimeo.com\\\/video\\\/.+?\\\/config\?.+?\"", vimeo_html.text)
+        "\"https:\\\/\\\/player.vimeo.com\\\/video\\\/\d+?\\\/config\?.+?\"", vimeo_html.text)
     if not config_url_match.group(0):
         raise RuntimeError("Failed to get video config")
         return
-
     config_url = config_url_match.group(0)[1:-1].replace("\\/", "/")
     config_html = requests.get(config_url)
     return config_html.json()["request"]["files"]["progressive"]
