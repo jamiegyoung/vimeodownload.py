@@ -1,5 +1,7 @@
-![](https://img.shields.io/pypi/status/vimeodownload.py) ![](https://img.shields.io/pypi/v/vimeodownload.py) ![](https://img.shields.io/pypi/pyversions/vimeodownload.py) ![](https://img.shields.io/pypi/l/vimeodownload.py)
-# vimeodownload.py
+[![](https://img.shields.io/pypi/status/vimeodownload.py)](https://pypi.org/project/vimeodownload.py/) [![](https://img.shields.io/pypi/v/vimeodownload.py)](https://pypi.org/project/vimeodownload.py/)  [![](https://img.shields.io/pypi/pyversions/vimeodownload.py)](https://pypi.org/project/vimeodownload.py/) [![](https://img.shields.io/pypi/l/vimeodownload.py)](https://pypi.org/project/vimeodownload.py/)
+
+
+# [vimeodownload.py](https://pypi.org/project/vimeodownload.py/)
 A simple package that downloads public and private Vimeo videos.
 
 ***NOTE:*** *This module is not extensively tested so use at your own risk. If you do find an issue, please report it on the [GitHub repository](https://github.com/jamiegyoung/vimeodownload.py)*
