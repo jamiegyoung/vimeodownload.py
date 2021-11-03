@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='jamiegyoung',
-    url='https://github.com/jamiegyoung/vimeo-download-py',
+    url='https://github.com/jamiegyoung/vimeodownload.py',
     keywords=['python', 'video', 'vimeo', 'download'],
     packages=find_packages(),
     install_requires=['requests>=2,<3'],
@@ -25,5 +25,8 @@ setup(
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-        'Topic :: Internet :: Multimedia :: Video']
+        'Topic :: Internet',
+        'Topic :: Multimedia :: Video',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
 )

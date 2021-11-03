@@ -1,3 +1,4 @@
+![](https://img.shields.io/pypi/status/vimeodownload.py) ![](https://img.shields.io/pypi/v/vimeodownload.py) ![](https://img.shields.io/pypi/pyversions/vimeodownload.py) ![](https://img.shields.io/pypi/l/vimeodownload.py)
 # vimeodownload.py
 This is a simple package that downloads public and private Vimeo videos.
 
