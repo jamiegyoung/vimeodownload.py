@@ -2,7 +2,7 @@
 # vimeodownload.py
 This is a simple package that downloads public and private Vimeo videos.
 
-***NOTE:*** *This module is not extensively tested so use at your own risk. If you do find an issue, please report it on the [GitHub repository](https://github.com/jamiegyoung/vimeo-download-py)*
+***NOTE:*** *This module is not extensively tested so use at your own risk. If you do find an issue, please report it on the [GitHub repository](https://github.com/jamiegyoung/vimeodownload.py)*
 
 ## Usage
 ```py
